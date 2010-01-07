@@ -2,9 +2,9 @@ class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
       
-      t.integer :fb_user_id
-      t.string  :email_hash
-
+      t.integer :fb_user_id, :limit => 20
+      t.string  :name
+                
       t.timestamps
     end
     

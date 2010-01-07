@@ -12,8 +12,8 @@
 ActiveRecord::Schema.define(:version => 20100107014807) do
 
   create_table "users", :force => true do |t|
-    t.integer  "fb_user_id"
-    t.string   "email_hash"
+    t.integer  "fb_user_id", :limit => 20
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

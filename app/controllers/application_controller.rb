@@ -15,8 +15,11 @@ class ApplicationController < ActionController::Base
   layout proc{ |c| c.request.xhr? ? false : "application" }
  
   before_filter :set_facebook_session
-  helper_method :facebook_session
+  helper_method :facebook_session, :current_user
   
+  cattr_accessor :current_user
+  
+  private
   def current_user
     @current_user ||= login_from_fb
   end
@@ -26,5 +29,8 @@ class ApplicationController < ActionController::Base
       self.current_user = User.find_by_fb_user(facebook_session.user)
     end
   end
+  
+  
+  
   
 end
