@@ -59,7 +59,9 @@ module Conveniences
     session[:return_to] = nil
   end
   
-  
+  def fb_notification(message)
+    facebook_session.send_notification [], "<fb:fbml>#{message}</fb:fbml>"    
+  end
 
 
   
