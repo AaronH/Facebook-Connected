@@ -9,10 +9,22 @@ class ApplicationController < ActionController::Base
   
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
+  filter_parameter_logging  :password,
+                            :fb_sig_friends
 
   layout proc{ |c| c.request.xhr? ? false : "application" }
  
+  before_filter :set_facebook_session
+  helper_method :facebook_session
   
+  def current_user
+    @current_user ||= login_from_fb
+  end
+  
+  def login_from_fb
+    if facebook_session
+      self.current_user = User.find_by_fb_user(facebook_session.user)
+    end
+  end
   
 end

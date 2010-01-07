@@ -4,3 +4,4 @@ log/*.pid
 tmp/*
 tmp/**/*
 db/*.sqlite3
+config/facebooker.yml

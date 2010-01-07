@@ -7,7 +7,6 @@ $(document).ready(function(){
   
   // Call any JS required by the view
   callPrep();
-
 });
 
 function isIe(){return $.browser.msie;}
