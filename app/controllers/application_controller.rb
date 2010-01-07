@@ -24,21 +24,19 @@ class ApplicationController < ActionController::Base
   end
 
   def login_from_fb
-    if facebook_session
-      self.current_user = User.find_by_fb_user(facebook_session.user)
-    end
+    self.current_user = User.find_by_fb_user(facebook_session.user) if facebook_session
   end
 
   def end_session(message = "You have been logged out.")
-    clear_fb_cookies!
     clear_facebook_session_information
+    clear_fb_cookies!
     reset_session # remove your cookies!
-    flash[:error] = message
-    redirect_to root_url
+    flash[:error] = message    
   end
 
   def facebook_session_expired
     end_session "Your facebook session has expired."
+    redirect_to root_url
   end
 
 
