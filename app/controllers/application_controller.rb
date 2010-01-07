@@ -3,8 +3,16 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
+  extend ActiveSupport::Memoizable  
+  include Conveniences
+  
+  
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
-
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  layout proc{ |c| c.request.xhr? ? false : "application" }
+ 
+  
+  
 end

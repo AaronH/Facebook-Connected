@@ -1,0 +1,17 @@
+!!! XML
+!!!
+
+%html
+  =	shared 'head'
+
+  %body
+    = shared 'header'
+    #page
+      #main
+        = shared 'notices'
+		
+        #content{:class => content_class }
+          = yield :layout
+      
+    = shared 'footer'
+    = shared 'javascript'

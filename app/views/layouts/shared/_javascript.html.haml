@@ -1,0 +1,13 @@
+- unless @no_javascript
+  = include_jquery
+  = include_javascript
+  = include_admin_javascript
+  
+  :javascript 
+    function callPrep() {
+      #{yield :domready}
+    }
+
+  = yield :javascript
+
+= shared 'trackers'

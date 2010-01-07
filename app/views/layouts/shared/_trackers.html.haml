@@ -1,0 +1,6 @@
+- unless development? or admin?
+  /[if lte IE 6]
+    :javascript
+      var IE6UPDATE_OPTIONS = {icons_path: "http://static.ie6update.com/hosted/ie6update/images/"}
+    = javascript_include_tag "http://static.ie6update.com/hosted/ie6update/ie6update.js"
+
