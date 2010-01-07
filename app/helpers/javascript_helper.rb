@@ -68,5 +68,12 @@ module JavascriptHelper
     content_for :javascript, &block
   end
   
+  def initialize_facebook_js
+    options = ["'reloadIfSessionStateChanged':true"]
+    # automatically log in if the user is logged into Facebook
+    options << (logged_in? ? "'ifUserNotConnected':'#{logout_path}'" : "'ifUserConnected':'#{login_path}'" )
+    init_fb_connect "XFBML", :js => :jquery, :app_settings => "{#{options.join ','}}"
+  end
+  
   
 end

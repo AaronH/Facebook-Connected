@@ -1,11 +1,12 @@
 class SessionsController < ApplicationController
-  before_filter :require_user, :only => [:destroy]
-  
-  def destroy
-    cookies.delete :auth_token
-    clear_fb_cookies!
-    reset_session
-    redirect_to root_path
+
+  def new
+    User.create_from_fb_connect facebook_session.user
+    redirect_back_or_default
   end
-  
+
+  def destroy
+    end_session
+  end
+
 end
