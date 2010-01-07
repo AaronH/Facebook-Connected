@@ -1,0 +1,6 @@
+log/*.log
+log/*.pid
+.DS_Store
+tmp/*
+tmp/**/*
+db/*.sqlite3
