@@ -1,1 +1,7 @@
-This app doesn't do anything - even authenticate - just yet
+This is a basic starter app that expects all users to be 
+connected via Facebook Connect.
+
+You will need to create and update a config/facebooker.yml with your
+appropriate Facebook developer credentials.
+
+
