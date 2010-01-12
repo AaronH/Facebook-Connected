@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   
 
   def self.find_by_fb_user(fb_user)
-    User.find_by_fb_user_id(fb_user.uid) 
+    User.find_by_fb_user_id fb_user.uid 
   end
 
   # Take the data returned from facebook and create a new user from it.

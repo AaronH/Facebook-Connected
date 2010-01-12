@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
   def new
     unless logged_in?
       self.current_user = User.create_from_fb_connect facebook_session.user 
+      # send the user a notification via Facebook
       fb_notification "Thanks for joining Facebook Connected"
     end
     redirect_back_or_default

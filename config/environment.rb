@@ -22,6 +22,9 @@ Rails::Initializer.run do |config|
   config.gem "haml"
   config.gem "rubyist-aasm", :source => "http://gems.github.com", :lib => 'aasm'
   config.gem "facebooker"
+  
+  # testing stuff
+  config.gem "technicalpickles-shoulda_generator"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
