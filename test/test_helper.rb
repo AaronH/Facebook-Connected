@@ -35,4 +35,13 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  # Let's define a factory for the User model. The class name is guessed from the
+  # factory name.
+  Factory.define :user do |f|
+    # These properties are set statically, and are evaluated when the factory is
+    # defined.
+    f.name        'Aaron Hurley'
+    f.fb_user_id  1
+  end
+  
 end
