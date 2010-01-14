@@ -22,6 +22,7 @@ Rails::Initializer.run do |config|
   config.gem 'haml', :version => '>= 2.3.0'
   config.gem 'workflow'
   config.gem 'facebooker'
+  config.gem 'compass'
   
 
   # Only load the plugins named here, in the order given (default is alphabetical).
