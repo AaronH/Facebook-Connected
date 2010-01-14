@@ -5,3 +5,4 @@ tmp/*
 tmp/**/*
 db/*.sqlite3
 config/facebooker.yml
+public/.sass-cache
