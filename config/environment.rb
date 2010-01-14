@@ -19,9 +19,9 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem "haml-edge"
+  config.gem 'haml', :version => '>= 2.3.0'
   config.gem 'workflow'
-  config.gem "facebooker"
+  config.gem 'facebooker'
   
 
   # Only load the plugins named here, in the order given (default is alphabetical).

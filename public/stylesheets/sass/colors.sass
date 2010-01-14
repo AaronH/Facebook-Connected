@@ -1,0 +1,9 @@
+!base = #38A
+!page = lighten(!base, 40%)
+!text = darken(!base, 20%)
+
+!link_color=  lighten(complement(!text), 10%)
+
+
+=hover_color(!color = !link_color)
+  :color = adjust-hue(!link_color, 120deg)

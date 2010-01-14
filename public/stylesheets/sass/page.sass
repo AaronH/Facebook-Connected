@@ -1,0 +1,16 @@
+@import imports.sass
+
+body
+  :background       = !page
+  :color            = !text
+  :line-height      = !line_height
+  :font
+    :size           = !font_size
+    :family         = !font_family
+  
+  
+a
+  :color            = !link_color
+  :text-decoration  none
+  &:hover
+    +hover_color
