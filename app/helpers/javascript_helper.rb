@@ -13,6 +13,7 @@ module JavascriptHelper
 
   def include_javascript
     javascript_include_tag  'forms',
+                            'utilities',
                             'ajax',
                             'application', 
                             :cache => true 

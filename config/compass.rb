@@ -1,3 +1,4 @@
+require 'compass'
 require 'compass-colors'
 require 'fancy-buttons'
 # Require any additional compass plugins here.

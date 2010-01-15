@@ -28,15 +28,16 @@ $.ajaxSetup({
 ////
 // Setup basic flash notice functions
 function initNotices(){
-  $('.notice').live('click', function(){
-    $(this).fadeTo('fast',0);
-  }).not(':empty').fadeTo('fast',0.8);
+  $('.notice:not(:has(a))').live('click', function(){
+    $(this).fadesOut();
+  });
 }
 /////
 // Show new notices
 $.fn.notify = function(text) {
+
   return $(this).stop().fadeTo(1,0, function(){
-    $(this).html(text).fadesIn();
+    $(this).html(text).show().fadeTo('fast',1);
   });
 }
 ////

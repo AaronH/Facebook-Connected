@@ -1,0 +1,86 @@
+/*
+Syntax error: Undefined variable: "!font_size".
+        on line 10 of /Library/WebServer/Documents/Facebook-Connected/app/stylesheets/notices.sass
+
+5:   +v-gradient(mix(lighten(!color, 15%), !page, 30%), mix(!color, !page))
+6:   
+7: .notice
+8:   :color              = !notice_color
+9:   :text-align         center
+10:   :font-size          = !font_size
+11:   :padding            1px 0
+12:   :margin             .15em 0
+13:   +border-radius(!font_size + 2)
+14:   +column(!columns)
+15:   +opacity(0.8)
+
+Backtrace:
+/Library/WebServer/Documents/Facebook-Connected/app/stylesheets/notices.sass:10
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/script/variable.rb:27:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/prop_node.rb:104:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:237:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:177:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:258:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:258:in `map'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:258:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:249:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/rule_node.rb:175:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:237:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:177:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:258:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:258:in `map'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:258:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:249:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:237:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:177:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/root_node.rb:27:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/tree/node.rb:111:in `render'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/plugin.rb:97:in `update_stylesheet'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/plugin.rb:83:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/plugin.rb:78:in `each'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/plugin.rb:78:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/plugin.rb:76:in `each'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/plugin.rb:76:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/plugin.rb:63:in `check_for_updates'
+/Library/Ruby/Gems/1.8/gems/haml-2.3.0/lib/sass/plugin/rack.rb:43:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/facebooker-1.0.58/lib/rack/facebook.rb:43:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/railz/application_spawner.rb:385:in `start_request_handler'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/railz/application_spawner.rb:343:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/railz/application_spawner.rb:341:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/bin/passenger-spawn-server:61
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"!font_size\".\A         on line 10 of /Library/WebServer/Documents/Facebook-Connected/app/stylesheets/notices.sass\A \A 5:   +v-gradient(mix(lighten(!color, 15%), !page, 30%), mix(!color, !page))\A 6:   \A 7: .notice\A 8:   :color              = !notice_color\A 9:   :text-align         center\A 10:   :font-size          = !font_size\A 11:   :padding            1px 0\A 12:   :margin             .15em 0\A 13:   +border-radius(!font_size + 2)\A 14:   +column(!columns)\A 15:   +opacity(0.8)"; }

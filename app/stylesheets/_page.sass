@@ -1,13 +1,11 @@
 @import imports.sass
 
+!columns = 24
+
 body
   :background       = !page
   :color            = !text
-  :line-height      = !line_height
-  :font
-    :size           = !font_size
-    :family         = !font_family
-  
+  :cursor default
 
 a
   :color            = !link_color
@@ -19,3 +17,10 @@ a
     +fancy-button-structure
     +fancy-button-colors(!button_color, complement(!button_color))
     :margin 1em
+
+#page
+  +container
+  
+#header, #footer, #main
+  :position relative
+  +column(!columns)

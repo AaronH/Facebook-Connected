@@ -5,13 +5,12 @@
   =	shared 'head'
 
   %body
-    = shared 'header'
     #page
-      #main
+      = shared 'header'
+      #main		
         = shared 'notices'
-		
         #content{:class => content_class }
           = yield :layout
       
-    = shared 'footer'
+      = shared 'footer'
     = shared 'javascript'
