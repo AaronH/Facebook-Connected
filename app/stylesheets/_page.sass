@@ -1,4 +1,4 @@
-@import reset.sass
+@import imports.sass
 
 body
   :background       = !page
@@ -8,9 +8,14 @@ body
     :size           = !font_size
     :family         = !font_family
   
-  
+
 a
   :color            = !link_color
   :text-decoration  none
   &:hover
     +hover_color
+  
+  &.button
+    +fancy-button-structure
+    +fancy-button-colors(!button_color, complement(!button_color))
+    :margin 1em

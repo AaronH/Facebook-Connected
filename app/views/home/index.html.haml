@@ -1,6 +1,6 @@
 %h1 Home Page
 %p= @time.to_s :long
-%p= link_to 'Google', 'http://google.com', :popup => true
+%p= link_to 'Google', 'http://google.com', :popup => true, :class => 'button'
 
 %p
   - if logged_in?

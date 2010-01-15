@@ -1,92 +1,60 @@
+/* line 1, ../../app/stylesheets/_reset.sass */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, t {
   margin: 0;
   padding: 0;
 }
 
+/* line 5, ../../app/stylesheets/_reset.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 9, ../../app/stylesheets/_reset.sass */
 fieldset, img, abbr, acronym {
   border: 0;
 }
 
+/* line 12, ../../app/stylesheets/_reset.sass */
 address, caption, cite, code, dfn, em, strong, th, var {
   font-style: normal;
   font-weight: normal;
 }
 
+/* line 16, ../../app/stylesheets/_reset.sass */
 ol, ul {
   list-style: none;
 }
 
+/* line 19, ../../app/stylesheets/_reset.sass */
 caption, th {
   text-align: left;
 }
 
+/* line 22, ../../app/stylesheets/_reset.sass */
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: normal;
 }
 
+/* line 26, ../../app/stylesheets/_reset.sass */
 q:before, q:after {
   content: '';
 }
 
+/* line 29, ../../app/stylesheets/_reset.sass */
 html {
   font: 100.01%;
 }
 
+/* line 32, ../../app/stylesheets/_reset.sass */
 a {
   outline: none;
 }
 
+/* fancy_buttons settins */
 /* incase an inverted custom gradient isn't specified */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, t {
-  margin: 0;
-  padding: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-fieldset, img, abbr, acronym {
-  border: 0;
-}
-
-address, caption, cite, code, dfn, em, strong, th, var {
-  font-style: normal;
-  font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-caption, th {
-  text-align: left;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-q:before, q:after {
-  content: '';
-}
-
-html {
-  font: 100.01%;
-}
-
-a {
-  outline: none;
-}
-
+/* line 3, ../../app/stylesheets/_page.sass */
 body {
   background: #bedeeb;
   color: #1b495c;
@@ -95,9 +63,17 @@ body {
   font-family: 'Lucida Grande', Lucida, Verdana, sans-serif;
 }
 
+/* line 12, ../../app/stylesheets/_page.sass */
 a {
   color: #834227;
   text-decoration: none;
+}
+/* line 15, ../../app/stylesheets/_page.sass */
+a:hover {
+  color: #278342;
+}
+/* line 18, ../../app/stylesheets/_page.sass */
+a.button {
   font-family: "Lucida Grande", Lucida, Arial, sans_serif;
   background: url('/button_bg.png') repeat-x bottom left;
   margin: 0;
@@ -107,70 +83,77 @@ a {
   cursor: pointer;
   text-decoration: none;
   border-style: solid;
-  font-weight: bold;
+  font-weight: normal;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
-  font-size: 18px;
-  line-height: 21.6px;
-  padding: 5px 18px;
+  font-size: 14px;
+  line-height: 16.8px;
+  padding: 2px 11px;
   border-width: 1px;
-  background-color: #444444;
-  background: -webkit-gradient(linear, left top, left bottom, from(#989898), to(#4f4f4f), color-stop(10%, #6a6a6a), color-stop(50%, #3d3d3d), color-stop(50%, #353535));
-  background: -moz-linear-gradient(left top, left bottom, from(#989898), to(#4f4f4f), color-stop(10%, #6a6a6a), color-stop(50%, #3d3d3d), color-stop(50%, #353535));
-  border-color: #1e1e1e;
-  text-shadow: #040404 0px 1px 1px;
+  background-color: #a43406;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d6967b), to(#924a2d), color-stop(10%, #bc603a), color-stop(50%, #773c25), color-stop(50%, #6b3621));
+  background: -moz-linear-gradient(left top, left bottom, from(#d6967b), to(#924a2d), color-stop(10%, #bc603a), color-stop(50%, #773c25), color-stop(50%, #6b3621));
+  border-color: #472416;
+  text-shadow: #290d02 0px 1px 1px;
   color: white;
+  margin: 1em;
 }
-a::-moz-focus-inner {
+/* line 161, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
-a:focus {
+/* line 164, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button:focus {
   outline: none;
 }
-a.disabled, a[disabled] {
+/* line 166, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button.disabled, a.button[disabled] {
   opacity: 0.7;
   -moz-opacity: 0.7;
   -khtml-opacity: 0.7;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   filter: alpha(opacity=70);
 }
-a.disabled:hover, a.disabled:focus, a[disabled]:hover, a[disabled]:focus {
+/* line 171, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button.disabled:hover, a.button.disabled:focus, a.button[disabled]:hover, a.button[disabled]:focus {
   cursor: default;
 }
-a:active {
-  padding: 4px 17px;
+/* line 142, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button:active {
+  padding: 1px 10px;
   border-width: 2px;
 }
-a.disabled:active, a[disabled] {
-  padding: 5px 18px;
+/* line 145, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button.disabled:active, a.button[disabled] {
+  padding: 2px 11px;
   border-width: 1px;
 }
-a.disabled:active, a.disabled:hover, a[disabled]:active, a[disabled]:hover {
-  background-color: #444444;
-  background: -webkit-gradient(linear, left top, left bottom, from(#989898), to(#4f4f4f), color-stop(10%, #6a6a6a), color-stop(50%, #3d3d3d), color-stop(50%, #353535));
-  background: -moz-linear-gradient(left top, left bottom, from(#989898), to(#4f4f4f), color-stop(10%, #6a6a6a), color-stop(50%, #3d3d3d), color-stop(50%, #353535));
-  border-color: #1e1e1e;
-  text-shadow: #040404 0px 1px 1px;
+/* line 23, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button.disabled:active, a.button.disabled:hover, a.button[disabled]:active, a.button[disabled]:hover {
+  background-color: #a43406;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d6967b), to(#924a2d), color-stop(10%, #bc603a), color-stop(50%, #773c25), color-stop(50%, #6b3621));
+  background: -moz-linear-gradient(left top, left bottom, from(#d6967b), to(#924a2d), color-stop(10%, #bc603a), color-stop(50%, #773c25), color-stop(50%, #6b3621));
+  border-color: #472416;
+  text-shadow: #290d02 0px 1px 1px;
   color: white;
 }
-a:hover, a:focus {
-  background-color: #3c3c3c;
-  background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#474747), color-stop(10%, #626262), color-stop(50%, #353535), color-stop(50%, #2d2d2d));
-  background: -moz-linear-gradient(left top, left bottom, from(#909090), to(#474747), color-stop(10%, #626262), color-stop(50%, #353535), color-stop(50%, #2d2d2d));
-  border-color: #161616;
-  text-shadow: black 0px 1px 1px;
+/* line 25, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button:hover, a.button:focus {
+  background-color: #0676a4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7bbcd6), to(#2d7492), color-stop(10%, #3a97bc), color-stop(50%, #255e77), color-stop(50%, #21556b));
+  background: -moz-linear-gradient(left top, left bottom, from(#7bbcd6), to(#2d7492), color-stop(10%, #3a97bc), color-stop(50%, #255e77), color-stop(50%, #21556b));
+  border-color: #163947;
+  text-shadow: #021e29 0px 1px 1px;
   color: white;
 }
-a:active {
-  background-color: #353535;
-  background: -webkit-gradient(linear, left top, left bottom, from(#353535), to(#4a4a4a), color-stop(30%, #3a3a3a), color-stop(50%, #303030), color-stop(50%, #292929));
-  background: -moz-linear-gradient(left top, left bottom, from(#353535), to(#4a4a4a), color-stop(30%, #3a3a3a), color-stop(50%, #303030), color-stop(50%, #292929));
-  border-color: #0f0f0f;
-  text-shadow: black 0px -1px -1px;
+/* line 30, ../../../../../Ruby/Gems/1.8/gems/fancy-buttons-0.3.7/lib/sass/_fancy_buttons.sass */
+a.button:active {
+  background-color: #872a05;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b3621), to(#8b452b), color-stop(30%, #733a24), color-stop(50%, #64321f), color-stop(50%, #582c1b));
+  background: -moz-linear-gradient(left top, left bottom, from(#6b3621), to(#8b452b), color-stop(30%, #733a24), color-stop(50%, #64321f), color-stop(50%, #582c1b));
+  border-color: #31180f;
+  text-shadow: #0c0400 0px -1px -1px;
   color: white;
-}
-a:hover {
-  color: #278342;
 }
