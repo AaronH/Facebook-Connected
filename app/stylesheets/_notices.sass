@@ -12,14 +12,12 @@
   :margin             .15em 0
   +border-radius(!font_size + 2)
   +column(!columns)
-  +opacity(0.8)
+  +opacity(0.9)
   +notice-back(!notice_color)
-  &:hover
-    +opacity(1)
   a
     :color= !error_color
     :font-weight bold
-    :padding .5em
+    :padding .25em 0
     &:hover
       :color= lighten(!error_color, 10%)
       :text-decoration underline

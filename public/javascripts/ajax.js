@@ -28,14 +28,13 @@ $.ajaxSetup({
 ////
 // Setup basic flash notice functions
 function initNotices(){
-  $('.notice:not(:has(a))').live('click', function(){
-    $(this).fadesOut();
-  });
+  $('.notice:not(:has(a))').
+    attr('title', 'Click to hide').
+    live('click', function(){$(this).fadesOut();});
 }
 /////
 // Show new notices
 $.fn.notify = function(text) {
-
   return $(this).stop().fadeTo(1,0, function(){
     $(this).html(text).show().fadeTo('fast',1);
   });

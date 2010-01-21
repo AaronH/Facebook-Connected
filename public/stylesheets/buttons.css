@@ -30,7 +30,7 @@ div {
 /* line 27, ../../app/stylesheets/buttons.sass */
 a.button, button {
   font-family: "Lucida Grande", Lucida, Arial, sans_serif;
-  background: url('/button_bg.png') repeat-x bottom left;
+  background: url('/images/button_bg.png') repeat-x bottom left;
   margin: 0;
   width: auto;
   overflow: visible;
